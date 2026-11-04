@@ -1,0 +1,5 @@
+node Doc {
+  slug: String @key
+  body: String @index
+  embedding: Vector(1536) @index
+}

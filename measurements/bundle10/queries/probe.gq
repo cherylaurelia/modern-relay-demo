@@ -1,0 +1,140 @@
+query v0($q: Vector(1536)) {
+  match { $d: Doc0 }
+  return { $d.slug }
+  order { nearest($d.embedding, $q) }
+  limit 10
+}
+
+query t0($q: String) {
+  match { $d: Doc0 }
+  return { $d.slug }
+  order { bm25($d.body, $q) desc }
+  limit 10
+}
+
+query v1($q: Vector(1536)) {
+  match { $d: Doc1 }
+  return { $d.slug }
+  order { nearest($d.embedding, $q) }
+  limit 10
+}
+
+query t1($q: String) {
+  match { $d: Doc1 }
+  return { $d.slug }
+  order { bm25($d.body, $q) desc }
+  limit 10
+}
+
+query v2($q: Vector(1536)) {
+  match { $d: Doc2 }
+  return { $d.slug }
+  order { nearest($d.embedding, $q) }
+  limit 10
+}
+
+query t2($q: String) {
+  match { $d: Doc2 }
+  return { $d.slug }
+  order { bm25($d.body, $q) desc }
+  limit 10
+}
+
+query v3($q: Vector(1536)) {
+  match { $d: Doc3 }
+  return { $d.slug }
+  order { nearest($d.embedding, $q) }
+  limit 10
+}
+
+query t3($q: String) {
+  match { $d: Doc3 }
+  return { $d.slug }
+  order { bm25($d.body, $q) desc }
+  limit 10
+}
+
+query v4($q: Vector(1536)) {
+  match { $d: Doc4 }
+  return { $d.slug }
+  order { nearest($d.embedding, $q) }
+  limit 10
+}
+
+query t4($q: String) {
+  match { $d: Doc4 }
+  return { $d.slug }
+  order { bm25($d.body, $q) desc }
+  limit 10
+}
+
+query v5($q: Vector(1536)) {
+  match { $d: Doc5 }
+  return { $d.slug }
+  order { nearest($d.embedding, $q) }
+  limit 10
+}
+
+query t5($q: String) {
+  match { $d: Doc5 }
+  return { $d.slug }
+  order { bm25($d.body, $q) desc }
+  limit 10
+}
+
+query v6($q: Vector(1536)) {
+  match { $d: Doc6 }
+  return { $d.slug }
+  order { nearest($d.embedding, $q) }
+  limit 10
+}
+
+query t6($q: String) {
+  match { $d: Doc6 }
+  return { $d.slug }
+  order { bm25($d.body, $q) desc }
+  limit 10
+}
+
+query v7($q: Vector(1536)) {
+  match { $d: Doc7 }
+  return { $d.slug }
+  order { nearest($d.embedding, $q) }
+  limit 10
+}
+
+query t7($q: String) {
+  match { $d: Doc7 }
+  return { $d.slug }
+  order { bm25($d.body, $q) desc }
+  limit 10
+}
+
+query v8($q: Vector(1536)) {
+  match { $d: Doc8 }
+  return { $d.slug }
+  order { nearest($d.embedding, $q) }
+  limit 10
+}
+
+query t8($q: String) {
+  match { $d: Doc8 }
+  return { $d.slug }
+  order { bm25($d.body, $q) desc }
+  limit 10
+}
+
+query v9($q: Vector(1536)) {
+  match { $d: Doc9 }
+  return { $d.slug }
+  order { nearest($d.embedding, $q) }
+  limit 10
+}
+
+query t9($q: String) {
+  match { $d: Doc9 }
+  return { $d.slug }
+  order { bm25($d.body, $q) desc }
+  limit 10
+}
+

@@ -1,0 +1,11 @@
+version: 1
+metadata:
+  name: cache-probe
+graphs:
+  knowledge:
+    schema: knowledge.pg
+    queries: queries/
+policies:
+  graph-access:
+    file: graph.policy.yaml
+    applies_to: [knowledge]

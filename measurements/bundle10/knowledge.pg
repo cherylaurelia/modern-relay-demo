@@ -1,0 +1,50 @@
+node Doc0 {
+  slug: String @key
+  body: String @index
+  embedding: Vector(1536) @index
+}
+node Doc1 {
+  slug: String @key
+  body: String @index
+  embedding: Vector(1536) @index
+}
+node Doc2 {
+  slug: String @key
+  body: String @index
+  embedding: Vector(1536) @index
+}
+node Doc3 {
+  slug: String @key
+  body: String @index
+  embedding: Vector(1536) @index
+}
+node Doc4 {
+  slug: String @key
+  body: String @index
+  embedding: Vector(1536) @index
+}
+node Doc5 {
+  slug: String @key
+  body: String @index
+  embedding: Vector(1536) @index
+}
+node Doc6 {
+  slug: String @key
+  body: String @index
+  embedding: Vector(1536) @index
+}
+node Doc7 {
+  slug: String @key
+  body: String @index
+  embedding: Vector(1536) @index
+}
+node Doc8 {
+  slug: String @key
+  body: String @index
+  embedding: Vector(1536) @index
+}
+node Doc9 {
+  slug: String @key
+  body: String @index
+  embedding: Vector(1536) @index
+}

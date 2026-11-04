@@ -1,0 +1,13 @@
+query by_text($q: String) {
+  match { $d: Doc }
+  return { $d.slug }
+  order { bm25($d.body, $q) desc }
+  limit 10
+}
+
+query by_vector($q: Vector(1536)) {
+  match { $d: Doc }
+  return { $d.slug }
+  order { nearest($d.embedding, $q) }
+  limit 10
+}

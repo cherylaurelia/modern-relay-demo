@@ -1,0 +1,18 @@
+version: 1
+groups:
+  readers: [act-alice]
+rules:
+  - id: readers-can-read
+    allow:
+      actors: { group: readers }
+      actions: [read]
+      branch_scope: any
+  - id: readers-can-invoke
+    allow:
+      actors: { group: readers }
+      actions: [invoke_query]
+  - id: writers-can-load
+    allow:
+      actors: { group: readers }
+      actions: [change]
+      branch_scope: any
