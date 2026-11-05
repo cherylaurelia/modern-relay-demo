@@ -1,7 +1,7 @@
 import { cappedCaches, defaultCaches, scenarios, type Sample } from "./measurements";
 
 const ISSUE = "https://github.com/ModernRelay/omnigraph/issues/702";
-const BRANCH = "https://github.com/cherylaurelia/omnigraph/tree/fix/lance-data-cache-bytes";
+const PR = "https://github.com/ModernRelay/omnigraph/pull/1269";
 const DEMO_REPO = "https://github.com/cherylaurelia/modern-relay-demo";
 
 const WIDTH = 720;
@@ -80,12 +80,12 @@ export default function Page() {
           No setting limits how much memory the Lance caches may keep: 6 GiB + 1 GiB per graph.
         </h1>
         <p className="mt-4 max-w-3xl text-lg">
-          This unmerged branch adds two environment variables that set both sizes, and the defaults stay
+          This open PR adds two environment variables that set both sizes, and the defaults stay
           as they are. They help when the hot vector partitions fit in the cache, and hurt badly when they don&apos;t.
         </p>
         <div className="mt-6 flex flex-wrap gap-2">
-          <a className={`${linkClass} border-ink bg-ink text-page hover:bg-ink`} href={BRANCH}>
-            The fix (branch)
+          <a className={`${linkClass} border-ink bg-ink text-page hover:bg-ink`} href={PR}>
+            The fix (PR 1269)
           </a>
           <a className={linkClass} href={ISSUE}>
             Issue 702
